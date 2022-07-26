@@ -1,5 +1,6 @@
-# 셀프 넘버
-# https://www.acmicpc.net/problem/4673
+"셀프 넘버"
+"https://www.acmicpc.net/problem/4673"
+
 
 natural_num = set(range(1, 10001))
 generate_num = set()

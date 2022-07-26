@@ -1,5 +1,6 @@
-# 알람시계
-# https://www.acmicpc.net/problem/2884
+"알람시계"
+"https://www.acmicpc.net/problem/2884"
+
 
 H, M = map(int, input().split())
 
