@@ -22,5 +22,27 @@
 2 1 2 1 2 1
 예제 출력 2 
 -1 0 0 1 0 7
+
+
+코드의 시작은 처음 올바른 체스 세트와
+내가 입력할 체스 세트를 리스트로 만들어 준다.
+chess_pieces = [1, 1, 2, 2, 2, 8]
+my_pieces = list(map(int, input().split()))
+
+다음으로 위의 리스트들을 for문을 사용해 반복해 주는데 체스 말 종류 수 만큼 반복해 주는것으로 설정한다.
+for i in range(6):
+다음으로 print를 해 주는데 '올바른 체스 세트의 i 번째' 빼기 '내가 입력한 체스 세트의 i 번째' 를 해준다.
+이렇게 하면 chess_pieces[index(0)] - my_pieces[index(0)], chess_pieces[index(1)] - my_pieces[index(1)] .... index(5)
+5번째 인덱스까지 - 를 해주고 값을 print() 해주게 된다.
+
+마지막으로 예제 출력과 같이 답이 나오기 위해서는 end=' ' 가 필요하다. print 된 값 뒤에 ' ' 를 넣어준다.
+예시로 end=' ' 가 없는 값 라면 1234로 나올 값이 end=' '가 있다면 1 2 3 4 로 나오게 된다.
+end=' '까지 추가한다면 예제 출력과 같은 답이 나오게 되어 문제를 풀 수 있다.
 '''
 
+
+chess_pieces = [1, 1, 2, 2, 2, 8]
+my_pieces = list(map(int, input().split()))
+
+for i in range(6):
+    print(chess_pieces[i] - my_pieces[i], end=' ')
